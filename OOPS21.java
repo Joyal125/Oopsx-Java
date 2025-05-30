@@ -1,19 +1,19 @@
-interface vehicle1{
-    default void Start(){
-        System.out.print("The car is start");
+ abstract class Animal3{
+    abstract void MakeSound();
+ }
+  class Cat extends Animal3{
+    void System(){
+        System.out.print("CAt");
     }
-    public void Drive();
+    void MakeSound(){
+        System.out.print("Meow");
+    }
+ }
 
-    class Car implements vehicle1{
-        public void Drive(){
-            System.out.print("Thw car is Starting");
-        }
-    }
-}
 public class OOPS21{
     public static void main(String[] args) {
-        Car s1 = new Car();
-        s1.Start();
+Cat s1 = new Cat();
+s1.MakeSound();
 
     }
 }
